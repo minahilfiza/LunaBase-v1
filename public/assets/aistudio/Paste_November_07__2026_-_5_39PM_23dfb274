@@ -1,0 +1,1252 @@
+# PROJECT MASTER PROMPT
+# LUNABASE — JUNIOR ASTRONAUT MISSION TRAINER
+## Complete Interactive 3D Educational Space Survival Web Application
+
+---
+
+# 1. YOUR ROLE
+
+Act as an expert full-stack application developer, Three.js 3D game engineer, React and TypeScript architect, game designer, educational STEM specialist, animation designer, UI/UX designer, NASA open-data integration engineer and software testing specialist.
+
+Your task is to build a complete, playable, browser-based 3D educational game named:
+
+**LUNABASE — JUNIOR ASTRONAUT MISSION TRAINER**
+
+This is a lunar outpost survival and scientific exploration game for children aged 9–12.
+
+The player becomes the youngest commander assigned to a lunar research base.
+
+Their mission is to:
+
+- Explore a 3D lunar environment.
+- Control a third-person astronaut.
+- Interact with lunar-base equipment.
+- Maintain oxygen and water systems.
+- Manage electrical power.
+- Grow food inside a greenhouse.
+- Understand radiation protection.
+- Respond to simulated space-weather emergencies.
+- Make resource-management decisions.
+- Learn real space science through gameplay.
+- Complete seven connected mission shifts.
+
+The project is inspired by the Junior Astronaut Mission Trainer challenge.
+
+## NON-NEGOTIABLE REQUIREMENT
+
+Build an actual working 3D game.
+
+Do not build merely:
+- A static landing page.
+- A dashboard mockup.
+- A collection of buttons.
+- A 3D illustration.
+- A non-interactive animated presentation.
+- A set of disconnected screens.
+
+The player must be able to enter the 3D world, control an astronaut, walk to equipment, interact with objects, complete mini-games and observe real changes in the game environment.
+
+Implement the application, create the actual source files and run it.
+
+Do not simply explain how the application could be built.
+
+---
+
+# 2. DEVELOPMENT TECHNOLOGY
+
+Use the following architecture:
+
+Frontend:
+- React.
+- TypeScript.
+- Vite.
+- Modern CSS.
+- Responsive layout.
+
+3D engine:
+- Three.js.
+- React Three Fiber where useful.
+- Drei for suitable 3D helpers.
+- GLB/GLTF model loading.
+- Three.js animation system.
+
+Backend:
+- Node.js.
+- Express or an appropriate Google AI Studio-supported server-side environment.
+
+Voice:
+- Browser Web Speech API.
+- SpeechSynthesis.
+- SpeechSynthesisUtterance.
+
+Audio:
+- Web Audio API or HTML Audio API.
+
+Storage:
+- localStorage for single-player progress.
+- Backend caching for NASA data.
+
+External scientific data:
+- NASA DONKI.
+- NASA public scientific references.
+- NASA 3D Resources.
+
+Do not expose private API keys in frontend code.
+
+Use environment variables for server-side credentials.
+
+Use a modular and maintainable project architecture.
+
+Do not add unnecessary dependencies.
+
+---
+
+# 3. VISUAL IDENTITY AND ART DIRECTION
+
+Create a premium-quality, friendly, futuristic 3D space exploration experience.
+
+Visual style:
+
+- High-quality stylized low-poly 3D.
+- Bright, colorful lunar environment.
+- Deep navy space.
+- Purple and cyan highlights.
+- Glowing blue holograms.
+- Warm yellow habitat lighting.
+- Soft shadows.
+- Detailed lunar terrain.
+- Earth visible in the sky.
+- Animated stars.
+- Attractive astronaut characters.
+- Futuristic scientific equipment.
+
+The design should feel like a combination of a high-quality educational adventure game and a professional space simulator.
+
+Do not make the environment frightening or excessively realistic.
+
+Target children aged 9–12.
+
+Use consistent character appearances, materials, lighting and visual language throughout the game.
+
+---
+
+# 4. MAIN APPLICATION SCREENS
+
+Build a connected application with the following experiences.
+
+## SCREEN 1 — WELCOME TO LUNABASE
+
+Create a cinematic interactive 3D welcome scene.
+
+The environment should show:
+
+- Lunar surface.
+- Large Earth in the background.
+- Stars.
+- A spacecraft.
+- LunaBase habitat.
+- Solar panels.
+- Greenhouse dome.
+- Astronaut characters.
+
+Animate the camera with a slow cinematic rotation.
+
+Create the following buttons:
+
+- START MISSION.
+- CONTINUE MISSION.
+- HOW TO PLAY.
+- SCIENCE LIBRARY.
+- SETTINGS.
+
+All buttons must work.
+
+Interactions:
+
+Click spacecraft:
+Play a landing animation and sound.
+
+Click Earth:
+Show an educational information popup.
+
+Click habitat:
+Move the camera closer and display information.
+
+Click Start Mission:
+Open the mission briefing.
+
+Click Continue Mission:
+Restore saved progress.
+
+Do not autoplay voice narration before user interaction.
+
+## SCREEN 2 — MISSION BRIEFING
+
+Show the interior of LunaBase.
+
+Create a holographic table with a rotating 3D model of the outpost.
+
+Introduce the crew:
+
+ALEX — Junior Commander.
+MAYA — Engineer.
+DR. LEO — Scientist.
+ROBO — Robot Assistant.
+COMMANDER NOVA — Mission Control.
+
+Click each character to trigger an animation and dialogue.
+
+Maya:
+"I'm Maya, your engineer! I'll help you keep our power systems running."
+
+Dr. Leo:
+"I study plants and life-support science. Let's grow something amazing!"
+
+Robo:
+"Beep boop! I'm your science assistant. Let's discover how astronauts live in space!"
+
+Commander Nova:
+"Welcome, Commander! Your seven-shift mission begins now."
+
+Include an interactive tutorial explaining:
+
+- WASD movement.
+- Mouse camera control.
+- E interaction.
+- Mission objectives.
+- Resource indicators.
+- Pause and resume.
+
+## SCREEN 3 — MAIN 3D GAMEPLAY
+
+This is the most important part of the application.
+
+Create a navigable lunar outpost using Three.js.
+
+The player controls a visible third-person astronaut.
+
+The astronaut must physically move through the lunar environment.
+
+Create:
+
+1. Main habitat.
+2. Life-support module.
+3. Power station.
+4. Solar panel array.
+5. Greenhouse.
+6. Water-recovery station.
+7. Radiation shelter.
+8. Communication antenna.
+9. Lunar rover.
+10. Equipment inspection area.
+
+Use separate 3D meshes or imported models for important objects.
+
+Implement:
+
+- Third-person camera.
+- Smooth movement.
+- Keyboard controls.
+- Mouse camera rotation.
+- Collision detection.
+- Interaction detection.
+- Object highlighting.
+- Character animation.
+- Scene loading.
+- Error handling.
+
+Controls:
+
+W — Forward.
+S — Backward.
+A — Left.
+D — Right.
+Mouse — Rotate camera.
+E — Interact.
+ESC — Pause.
+
+Support touch controls on mobile devices where practical.
+
+Do not substitute a static image for the 3D environment.
+
+If suitable GLB assets are unavailable, build attractive procedural 3D objects using Three.js geometries and materials.
+
+---
+
+# 5. COMPLETE SEVEN-ACT STORYLINE
+
+The story must be connected to the actual game engine.
+
+Every shift must have:
+- A narrative introduction.
+- Character dialogue.
+- A 3D scene.
+- Interactive objectives.
+- Available decisions.
+- Resource costs.
+- Consequences.
+- Scientific explanations.
+- Completion conditions.
+- Mission feedback.
+
+## ACT 1 — ARRIVAL: WELCOME TO THE MOON
+
+Story:
+
+The spacecraft arrives at the lunar south-pole research region.
+
+The rocket lands near LunaBase.
+
+Earth is visible in the sky.
+
+The astronaut exits the spacecraft.
+
+Commander Nova says:
+
+"Congratulations, Commander! You've arrived at LunaBase. Your crew is waiting inside. Your mission is to keep the base safe for seven shifts and grow a plant in space."
+
+Interactions:
+
+- Inspect the rocket.
+- Explore the lunar surface.
+- View Earth.
+- Visit the habitat.
+- Find the solar panels.
+
+Learning:
+
+The Moon has almost no atmosphere. Astronauts need specialized habitats and life-support systems.
+
+## ACT 2 — MEET THE CREW
+
+Story:
+
+The astronaut enters the habitat.
+
+Three crew members stand around a holographic table.
+
+Introduce Maya, Dr. Leo and Robo.
+
+Make every character clickable.
+
+Clicking characters triggers:
+- Wave animation.
+- Dialogue.
+- Character-specific voice.
+- Information panel.
+
+The holographic table must contain clickable 3D representations of:
+
+- Solar array.
+- Greenhouse.
+- Life-support station.
+- Radiation shelter.
+- Water-recovery system.
+
+## ACT 3 — SHIFT 1: THE OXYGEN LEAK
+
+Story:
+
+Mission Control reports a simulated oxygen-system fault.
+
+Commander Nova:
+
+"Commander! Our sensors have detected a problem in the life-support system. We need to investigate."
+
+Show an oxygen-system warning.
+
+Create three decisions.
+
+OPTION A — REPAIR LIFE SUPPORT.
+
+Cost:
+10 units of simulated energy.
+
+Consequence:
+- Repair the system.
+- Stop the simulated leak.
+- Improve life-support condition.
+
+Maya performs a repair animation.
+
+OPTION B — IGNORE THE FAULT.
+
+Cost:
+No immediate energy.
+
+Consequence:
+- Oxygen decreases over subsequent simulation updates.
+- Future mission conditions become more challenging.
+
+OPTION C — CONSERVATION MODE.
+
+Cost:
+5 units of simulated water, representing a simplified game trade-off.
+
+Consequence:
+- Reduce non-essential activity.
+- Slow the simulated resource loss.
+- Do not falsely claim that this repairs the oxygen leak.
+
+The player must confirm a decision.
+
+Display a resource-impact preview.
+
+## ACT 4 — SHIFT 2: SOLAR PANEL MAINTENANCE
+
+Story:
+
+Maya detects reduced power generation.
+
+Create a solar-panel inspection and maintenance mini-game.
+
+The player must:
+
+- Approach the solar array.
+- Inspect the panel.
+- Identify the simulated dust problem.
+- Complete the cleaning activity.
+- Restore simulated power generation.
+
+Alternative:
+Reduce non-essential equipment consumption.
+
+Make the consequences visible.
+
+Learning:
+
+Solar panels convert sunlight into electricity, while batteries store energy for later use.
+
+## ACT 5 — SHIFT 3: WATER RECOVERY
+
+Story:
+
+The water-recovery system needs maintenance.
+
+Create an interactive filtration mini-game.
+
+The player must arrange the simplified filtration stages correctly.
+
+Include:
+
+- Water collection.
+- Initial filtration.
+- Further purification.
+- Water-quality monitoring.
+
+When successful:
+
+- Update water-recovery performance.
+- Change the equipment condition.
+- Increase recovered water according to configured game rates.
+
+Explain that real spacecraft water-recovery systems use several purification and monitoring processes.
+
+## ACT 6 — SHIFT 4 AND 5: THE LUNAR GREENHOUSE
+
+Story:
+
+Dr. Leo introduces the first greenhouse experiment.
+
+Create a beautiful 3D greenhouse.
+
+Include:
+
+- Transparent dome.
+- Growing trays.
+- Water supply.
+- Nutrient dispenser.
+- Grow lights.
+- Seed packets.
+- Growing plants.
+- Scientific instruments.
+
+The player must:
+
+1. Select a seed.
+2. Prepare a growing tray.
+3. Plant the seed.
+4. Supply suitable water.
+5. Activate grow lights.
+6. Monitor growing conditions.
+7. Wait for growth.
+8. Harvest when ready.
+
+Create at least five plant stages:
+
+Seed.
+Germination.
+Sprout.
+Growing plant.
+Harvest-ready plant.
+
+Plant growth must depend on simulated elapsed time and environmental conditions.
+
+Do not allow instant harvesting.
+
+Use actual 3D plant models or procedural plant geometry that changes as growth progresses.
+
+The greenhouse must visibly change after player actions.
+
+Learning:
+
+Explain controlled-environment agriculture and NASA plant research.
+
+## ACT 7 — SHIFT 6: SPACE-WEATHER EMERGENCY
+
+Story:
+
+Mission Control sends a space-weather alert.
+
+Commander Nova:
+
+"Commander! We have received a space-weather alert. Check our protection systems and follow the crew-safety procedure."
+
+Create a radiation-awareness scenario.
+
+Include:
+
+- Space-weather alert display.
+- Radiation shelter.
+- Habitat protection.
+- Crew characters.
+- Emergency status indicator.
+
+Player decisions:
+
+OPTION A — ENTER SHELTER.
+
+Cost:
+10 simulated energy units.
+
+Consequence:
+- Crew moves to the shelter.
+- Protective status improves.
+- Outdoor activities pause.
+
+OPTION B — CONTINUE SCIENCE.
+
+Consequence:
+- Outdoor activity continues in the simplified scenario.
+- Safety assessment becomes less favorable.
+
+OPTION C — SUSPEND OUTDOOR OPERATIONS.
+
+Consequence:
+- Outdoor operations stop.
+- Research is delayed.
+- Crew safety procedure improves.
+
+Clearly identify simulated exposure and safety values.
+
+Do not treat simplified shielding indicators as real radiation-dose measurements.
+
+## ACT 8 — SHIFT 7: FINAL HARVEST AND INSPECTION
+
+Story:
+
+The final shift begins.
+
+The astronaut and crew gather around the greenhouse.
+
+Narration:
+
+"Commander, it's time for our final inspection. Let's check our resources, review our safety systems and see how our greenhouse experiment went."
+
+Objectives:
+
+- Inspect oxygen.
+- Inspect water.
+- Check power.
+- Check food.
+- Check greenhouse.
+- Confirm radiation-safety procedures.
+- Complete crew-safety checklist.
+
+Allow harvesting only if the crop has actually reached the required growth stage.
+
+Show a 3D harvest animation.
+
+The player receives a final mission evaluation based on actual gameplay.
+
+---
+
+# 6. INTERACTIVE 3D OBJECT SYSTEM
+
+Build a reusable interaction system.
+
+Every interactive object must have:
+
+- Unique ID.
+- Name.
+- Position.
+- Interaction radius.
+- Current status.
+- Available actions.
+- Resource effects.
+- Associated objective.
+
+Interaction workflow:
+
+1. Player approaches an object.
+2. Detect proximity.
+3. Highlight the object.
+4. Display an interaction prompt.
+5. Player presses E or clicks Interact.
+6. Open the relevant equipment panel.
+7. Player selects an action.
+8. Validate the action.
+9. Update game state.
+10. Trigger animations and dialogue.
+11. Update resource values.
+12. Update objective progress.
+
+Equipment must not automatically complete an objective when a panel opens.
+
+Use Three.js Raycaster or proximity detection.
+
+---
+
+# 7. RESOURCE MANAGEMENT ENGINE
+
+Create a centralized ResourceSystem.ts.
+
+Track:
+
+- Oxygen.
+- Water.
+- Power.
+- Food.
+- Life-support condition.
+- Greenhouse condition.
+- Solar generation.
+- Battery reserves.
+- Radiation-safety status.
+
+All resource calculations must be centralized.
+
+Formulas:
+
+Oxygen = Previous Oxygen + Produced - Consumed
+
+Water = Previous Water + Recovered - Consumed
+
+Power = Previous Power + Generated - Consumed
+
+Food = Previous Food + Harvested - Consumed
+
+Prevent negative resource values.
+
+All important actions must have a cost or opportunity consequence.
+
+Examples:
+
+More greenhouse lighting consumes energy.
+
+Water used for crops reduces stored water.
+
+Power conservation may delay science activities.
+
+Shelter activation pauses outdoor research.
+
+Equipment maintenance requires resources but improves future performance.
+
+Display a preview before important decisions.
+
+Keep radiation safety separate from ordinary consumable resources.
+
+---
+
+# 8. REAL NASA DATA INTEGRATION
+
+This is an important competition requirement.
+
+Use real NASA open data wherever available.
+
+## NASA DONKI API
+
+Official source:
+
+https://api.nasa.gov/DONKI
+
+Solar Energetic Particle endpoint:
+
+https://api.nasa.gov/DONKI/SEP
+
+Build a server-side NASA data service.
+
+Create:
+
+GET /api/nasa/space-weather
+
+GET /api/nasa/space-weather/status
+
+Retrieve available NASA event records.
+
+Validate responses.
+
+Cache results.
+
+Include retrieval timestamps.
+
+Show source attribution.
+
+Use a server-side NASA API key through environment variables.
+
+Never place private credentials in frontend code.
+
+## LIVE DATA PANEL
+
+Create a NASA Space Weather panel.
+
+Display:
+
+- Event date.
+- Event type.
+- Available event description.
+- Data source.
+- Retrieval time.
+- Live/cached/historical/unavailable status.
+
+Allow the player to view a simple scientific explanation.
+
+IMPORTANT:
+
+DONKI solar energetic particle event records are not direct lunar surface radiation measurements.
+
+Do not invent radiation readings.
+
+Do not claim that the Moon is currently experiencing an emergency because an event exists in DONKI.
+
+Use real NASA data to inform educational briefings.
+
+Create clearly labelled game scenarios for the fictional LunaBase simulation.
+
+## ADDITIONAL NASA SOURCES
+
+Use appropriate official sources:
+
+NASA Open Science Data Repository:
+https://osdr.nasa.gov/
+
+NASA Artemis:
+https://www.nasa.gov/artemis/
+
+NASA Moon:
+https://science.nasa.gov/moon/
+
+NASA Space Weather:
+https://science.nasa.gov/heliophysics/space-weather/
+
+NASA 3D Resources:
+https://nasa3d.arc.nasa.gov/
+
+NASA plant research:
+https://www.nasa.gov/
+
+Only use datasets that can actually be retrieved and validated.
+
+Provide source attribution in the Science Library.
+
+Do not display fictional values as real NASA measurements.
+
+If the API fails, show clearly labelled cached data or a demonstration scenario.
+
+---
+
+# 9. COMMUNICATION DELAY MECHANIC
+
+Introduce a simplified Moon-Earth communication activity.
+
+The player can send a message to Mission Control.
+
+Display:
+
+- Sending animation.
+- Signal travel animation.
+- Estimated educational delay.
+- Mission Control response.
+
+Explain that communication is not instantaneous.
+
+Allow the player to complete selected local emergency procedures without waiting for Earth.
+
+Use clearly labelled simulated timing rather than claiming to model exact network transmission.
+
+---
+
+# 10. VOICE NARRATION SYSTEM
+
+Create NarrationSystem.ts.
+
+Use Web Speech API.
+
+Create four speaking characters.
+
+COMMANDER NOVA:
+Mission introductions, important warnings and mission announcements.
+
+MAYA:
+Engineering instructions and power-system explanations.
+
+DR. LEO:
+Plant science, greenhouse instructions and research explanations.
+
+ROBO:
+Short educational facts, hints and simple explanations.
+
+Required controls:
+
+- Play.
+- Pause.
+- Resume.
+- Stop.
+- Replay.
+- Mute.
+- Volume.
+- Subtitles.
+
+Trigger narration during:
+
+- Mission introduction.
+- Equipment interaction.
+- Mini-game instructions.
+- Important decisions.
+- Objective completion.
+- Emergency alerts.
+- Final mission report.
+
+Do not autoplay audio before user interaction.
+
+If speech synthesis is unavailable, show subtitles and preserve the complete dialogue system.
+
+---
+
+# 11. SCIENCE LIBRARY
+
+Build an interactive science library.
+
+Topics:
+
+- Oxygen generation.
+- Water recovery.
+- Solar energy.
+- Battery management.
+- Plant growth in space.
+- Lunar conditions.
+- Radiation protection.
+- Space weather.
+- Communication delay.
+- Resource-management trade-offs.
+
+Every topic must include:
+
+- Simple explanation.
+- Relevant 3D model or illustration.
+- Interesting fact.
+- Related game activity.
+- Scientific reference.
+
+Use short explanations suitable for children.
+
+Create an interactive "Did You Know?" section.
+
+Connect learning directly to the equipment the player uses.
+
+---
+
+# 12. GAME HUD
+
+Create a premium in-game HUD.
+
+Top:
+- Oxygen.
+- Water.
+- Power.
+- Food.
+- Radiation alert.
+- Current shift.
+
+Right:
+- Current mission objective.
+- Progress.
+- Hints.
+
+Bottom-left:
+- Character dialogue.
+- Narration subtitles.
+- Voice controls.
+
+Bottom-right:
+- Map.
+- Science.
+- Inventory.
+- Menu.
+
+Show contextual prompts near equipment.
+
+Keep the 3D world visible.
+
+Use collapsible panels.
+
+---
+
+# 13. MAP AND NAVIGATION
+
+Build an interactive map of LunaBase.
+
+Show actual equipment positions.
+
+Display the astronaut's current location.
+
+Allow the player to locate:
+
+- Habitat.
+- Greenhouse.
+- Power station.
+- Life-support station.
+- Water-recovery station.
+- Radiation shelter.
+- Rover.
+
+Navigation markers must match actual 3D positions.
+
+---
+
+# 14. SCORING AND ACHIEVEMENTS
+
+Create ScoringSystem.ts.
+
+Total score: 100.
+
+Suggested weighting:
+
+Crew safety: 30.
+
+Resource efficiency: 25.
+
+Mission completion: 20.
+
+Engineering tasks: 15.
+
+Scientific understanding: 10.
+
+Achievements:
+
+- Habitat Explorer.
+- Power Engineer.
+- Life Support Specialist.
+- Water Recovery Expert.
+- Greenhouse Guardian.
+- Lunar Botanist.
+- Safety Commander.
+- Junior Astronaut.
+
+Score actual player decisions.
+
+Do not reward unsafe actions or speed over safety.
+
+---
+
+# 15. MISSION RESULTS
+
+Create a beautiful 3D results scene.
+
+Show the crew around the holographic mission table.
+
+Display:
+
+- Overall score.
+- One-to-three stars.
+- Mission status.
+- Completed objectives.
+- Remaining resources.
+- Crew safety.
+- Greenhouse outcome.
+- Achievements.
+- Decision history.
+- Science concepts learned.
+
+Mission statuses:
+
+Successful.
+Partially successful.
+Unsuccessful.
+
+Use actual objective and safety conditions to determine the outcome.
+
+Provide:
+
+- Play Again.
+- Change Decisions.
+- Return Home.
+- Review Science.
+
+---
+
+# 16. AUDIO AND ANIMATION
+
+Implement:
+
+- Space ambience.
+- Rocket landing sound.
+- Button sound effects.
+- Equipment activation sounds.
+- Success sounds.
+- Warning sounds.
+- Greenhouse ambience.
+- Voice narration.
+- Mission completion audio.
+
+Animations:
+
+- Astronaut walking.
+- Astronaut interacting.
+- Crew waving.
+- Rocket landing.
+- Equipment repair.
+- Solar-panel maintenance.
+- Water filtration.
+- Seed planting.
+- Plant growth.
+- Shelter opening.
+- Crew gathering.
+- Results scoreboard.
+
+Animations must respond to actual gameplay events.
+
+Provide independent voice and sound-effect settings.
+
+---
+
+# 17. SAVE SYSTEM
+
+Create SaveSystem.ts.
+
+Use localStorage.
+
+Save:
+
+- Current shift.
+- Current objective.
+- Player position.
+- Resources.
+- Equipment conditions.
+- Greenhouse progress.
+- Player decisions.
+- Completed objectives.
+- Achievements.
+- Mission status.
+- Score.
+
+Restore the last valid saved state after refresh.
+
+Provide New Mission, Continue Mission and Restart Mission.
+
+Ask for confirmation before clearing saved progress.
+
+---
+
+# 18. APPLICATION STRUCTURE
+
+Create a clean project architecture.
+
+Suggested:
+
+src/
+  components/
+    WelcomeScreen
+    MissionBriefing
+    GameHUD
+    ResourcePanel
+    DialoguePanel
+    NarrationControls
+    EquipmentPanel
+    ScienceLibrary
+    MapPanel
+    MissionResults
+
+  game/
+    ThreeEngine
+    LunarEnvironment
+    AstronautController
+    CameraController
+    InteractionSystem
+    ResourceSystem
+    MissionSystem
+    DecisionSystem
+    ScoringSystem
+    SaveSystem
+    NarrationSystem
+    AudioSystem
+    AnimationSystem
+
+  missions/
+    Shift1
+    Shift2
+    Shift3
+    Shift4
+    Shift5
+    Shift6
+    Shift7
+
+  data/
+    equipment
+    missions
+    science
+    nasa
+    configuration
+
+  hooks/
+  types/
+  utils/
+
+server/
+  routes/
+  services/
+  middleware/
+
+Use reusable components and strongly typed interfaces.
+
+---
+
+# 19. PERFORMANCE AND RESPONSIVENESS
+
+Optimize for ordinary laptop hardware.
+
+Implement:
+
+- Efficient Three.js rendering.
+- Optimized geometry.
+- Reusable materials.
+- Controlled shadows.
+- Optimized GLB models.
+- Appropriate texture sizes.
+- Frame-rate-conscious animation.
+- Loading indicators.
+- Error handling.
+- Graphics-quality settings.
+- Responsive controls.
+
+Do not create unnecessarily complex 3D objects.
+
+Provide procedural fallback models if external assets fail.
+
+The game must remain playable when NASA APIs are unavailable.
+
+---
+
+# 20. DEVELOPMENT WORKFLOW
+
+Build the application in phases.
+
+PHASE 1:
+Create the project structure and working welcome screen.
+
+PHASE 2:
+Create the cinematic 3D lunar scene.
+
+PHASE 3:
+Build the lunar base and all important 3D objects.
+
+PHASE 4:
+Implement third-person astronaut movement.
+
+PHASE 5:
+Implement equipment interaction.
+
+PHASE 6:
+Implement mission progression and seven shifts.
+
+PHASE 7:
+Implement resource-management logic.
+
+PHASE 8:
+Implement mini-games.
+
+PHASE 9:
+Implement character narration and audio.
+
+PHASE 10:
+Implement NASA integration and Science Library.
+
+PHASE 11:
+Implement scoring, saving and mission results.
+
+PHASE 12:
+Test, debug and optimize the application.
+
+After each phase:
+
+- Run the application.
+- Test the implemented features.
+- Inspect errors.
+- Fix problems.
+- Preserve working functionality.
+
+Do not stop after building the homepage.
+
+Do not leave buttons non-functional.
+
+Do not claim an integration works before testing it.
+
+If a complex feature cannot be completed immediately, create a functional simplified version and improve it incrementally.
+
+---
+
+# 21. FINAL ACCEPTANCE TEST
+
+The application is complete only when:
+
+1. Welcome screen works.
+2. Start Mission works.
+3. Mission briefing works.
+4. Crew interactions work.
+5. 3D lunar world loads.
+6. Astronaut movement works.
+7. Camera follows correctly.
+8. Equipment detection works.
+9. Equipment actions work.
+10. Seven shifts are connected.
+11. Resource calculations work.
+12. Mini-games work.
+13. Greenhouse growth works.
+14. Radiation-safety scenario works.
+15. Narration works.
+16. Subtitles work.
+17. Sound controls work.
+18. NASA integration works or provides an honest fallback.
+19. Progress saves and restores.
+20. Final scoring works.
+21. Results reflect actual decisions.
+22. Replay works.
+
+---
+
+# 22. FINAL INSTRUCTION
+
+Build a complete and genuinely playable 3D educational game.
+
+The central gameplay must be:
+
+EXPLORE → INTERACT → DECIDE → EXPERIENCE CONSEQUENCES → LEARN → PROGRESS.
+
+The player must control a 3D astronaut and explore the lunar base.
+
+The player must interact with real 3D equipment.
+
+All resource values must be connected to the actual game logic.
+
+All seven shifts must be playable.
+
+Voice narration must work.
+
+NASA data must be authentic and clearly attributed.
+
+The game must teach real scientific concepts through meaningful engineering decisions.
+
+Do not generate only a visual demonstration.
+
+**CREATE THE ACTUAL APPLICATION, IMPLEMENT ITS SOURCE CODE, RUN IT, TEST IT AND FIX ERRORS BEFORE DECLARING IT COMPLETE.**
+
+Start by building a functional 3D vertical slice. Once it works, expand the complete seven-shift campaign while preserving the existing functionality.

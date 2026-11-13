@@ -1,0 +1,6 @@
+{
+  "name": "LunaBase — Junior Astronaut Mission Trainer",
+  "description": "Interactive 3D educational lunar survival and science exploration game for young astronauts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
